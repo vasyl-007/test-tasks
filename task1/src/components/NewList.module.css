@@ -1,0 +1,37 @@
+.container {
+  margin: 0;
+  padding: 0;
+  /* display: block;
+  margin: 0 auto; */
+  width: 320px;
+  height: 320px;
+  background-color: rgb(233, 201, 201);
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.block {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  background: grey;
+  border: 1px solid black;
+}
+
+.random {
+  composes: block;
+  background: rgb(77, 137, 214);
+}
+.won {
+  composes: block;
+  background: rgb(36, 143, 32);
+}
+.lost {
+  composes: block;
+  background: rgb(216, 72, 47);
+}
